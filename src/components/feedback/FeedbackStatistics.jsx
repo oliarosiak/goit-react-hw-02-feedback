@@ -27,10 +27,20 @@ class FeedbackStatistics extends Component{
 
     countTotalFeedback = () => {
         const total = this.state.good + this.state.neutral + this.state.bad;
+        // let total = 0; 
+        // total = this.state.good + this.state.neutral + this.state.bad;
         return total;
     }
 
-    // countPositiveFeedbackPercentage()
+    countPositiveFeedbackPercentage = () => {
+        // const persent = (this.state.good / (this.state.good + this.state.neutral + this.state.bad))*100;    
+        let persent = 0;
+        if (this.state.good > 0) {          
+            persent = Math.round((this.state.good / (this.state.good + this.state.neutral + this.state.bad))*100);
+            // persent = ((this.state.good / (this.state.good + this.state.neutral + this.state.bad))*100).toFixed(0);            
+        }
+        return persent;
+    }
 
 
     render() {
@@ -49,7 +59,7 @@ class FeedbackStatistics extends Component{
                         <li>Neutral: {this.state.neutral}</li>
                         <li>Bad: {this.state.bad}</li>
                         <li>Total: {this.countTotalFeedback()}</li>
-                        <li>Positive feedback: %</li>
+                        <li>Positive feedback: { this.countPositiveFeedbackPercentage() }%</li>
                     </ul>
                 </section>
                 
