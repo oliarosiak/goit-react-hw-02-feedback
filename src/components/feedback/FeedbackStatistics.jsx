@@ -47,11 +47,15 @@ class FeedbackStatistics extends Component{
         return (
             <>
                 <h1>Please leave feedback</h1>
+                {/* <Section title="" /> */}
+                {/* <FeedbackOptions options={} onLeaveFeedback={}></FeedbackOptions> */}
                 <div>
                     <button type='button' onClick={this.handleGoodIncrement}>Good</button>
                     <button type='button' onClick={this.handleNeutralIncrement}>Neutral</button>
                     <button type='button' onClick={this.handleBadIncrement}>Bad</button>
                 </div>
+                {/* <Section title="" /> */}
+                {/* <Statistics good={} neutral={} bad={} total={} positivePercentage={}></Statistics> */}
                 <section>
                     <h2>Statistics</h2>
                     <ul>
@@ -68,5 +72,15 @@ class FeedbackStatistics extends Component{
     }
    
 }
+
+
+/**
+ * Винеси відображення статистики в окремий компонент <Statistics good={} neutral={} bad={} total={} positivePercentage={}>.
+ * 
+    Винеси блок кнопок в компонент <FeedbackOptions options={} onLeaveFeedback={}>.
+
+    Створи компонент <Section title="">, який рендерить секцію із заголовком і дітей (children). 
+    Обгорни кожен із <Statistics> і <FeedbackOptions> у створений компонент секції.
+ */
 
 export default FeedbackStatistics;
