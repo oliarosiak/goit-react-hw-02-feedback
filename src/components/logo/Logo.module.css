@@ -1,0 +1,18 @@
+.wrapper{   
+    background: linear-gradient(to right, #fffbd5, #b20a2c);
+    width: 760px;
+    margin: 0 auto 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+.header{
+    font-size: 35px;
+    color: var(--logo-color);
+}
+
+.text{
+    font-size: 20px;
+    color: var(--slogan-color);
+}

@@ -39,15 +39,15 @@ class App extends Component{
     const percentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div>
+      <div style={{marginTop: '80px'}}>
         <Logo cafeName='Express Green Cafe' cafeSlogan='Healthy Body! Healthy Mind!' />
-        <Section title='Please leave feedback'>
+        <Section title='Please leave your feedback'>
           <FeedbackOptions options={stateKeys} onLeaveFeedback={onIncrement} />
         </Section>
         <Section title='Statistics'>
           {totalAmount > 0
             ? <Statistics good={good} neutral={neutral} bad={bad} total={totalAmount} positivePercentage={percentage} />        
-            : <Notification message='There is no feedback' />
+            : <Notification message='There is no feedback yet' />
           }
         </Section>
       </div>

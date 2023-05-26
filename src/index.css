@@ -1,5 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --logo-color: #1e6141;
+  --slogan-color: #3a753a;
+  --main-text-color: #188325;
+  --second-text-color: #2f6b33;
+  --border-color: #124a4e;
+  --bcg-color: #eeb645;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,10 +17,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 35px;
+  /* height: 100vh; */
+  font-size: 25px;
   color: darkgreen;
-  text-align: center;
-  padding-top: 50px; 
+  text-align: center;  
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
   background-image: url('https://picsum.photos/id/163/2000/1333');
   background-repeat: no-repeat;     
   background-position: left top;
