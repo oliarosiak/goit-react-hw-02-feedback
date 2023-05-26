@@ -4,6 +4,7 @@ import Statistics from './statistics/Statistics';
 import FeedbackOptions from './feedback/FeedbackOptions';
 import Section from './section/Section';
 import Notification from './notification/Notification';
+import Logo from './logo/Logo';
 
 
 class App extends Component{
@@ -37,17 +38,9 @@ class App extends Component{
     const totalAmount = this.countTotalFeedback();
     const percentage = this.countPositiveFeedbackPercentage();
 
-    // console.log(typeof (stateKeys));
-    // console.log(stateKeys);
-    // console.log(typeof (onIncrement));
-
     return (
-      <div
-        style={{
-          fontSize: 25,
-          color: 'darkgreen'
-        }}
-      >
+      <div>
+        <Logo cafeName='Express Green Cafe' cafeSlogan='Healthy Body! Healthy Mind!' />
         <Section title='Please leave feedback'>
           <FeedbackOptions options={stateKeys} onLeaveFeedback={onIncrement} />
         </Section>
