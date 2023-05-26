@@ -37,6 +37,10 @@ class App extends Component{
     const totalAmount = this.countTotalFeedback();
     const percentage = this.countPositiveFeedbackPercentage();
 
+    // console.log(typeof (stateKeys));
+    // console.log(stateKeys);
+    // console.log(typeof (onIncrement));
+
     return (
       <div
         style={{
