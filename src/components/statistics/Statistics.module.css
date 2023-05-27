@@ -5,11 +5,11 @@
 
 .item{
     padding: 8px 0;
-    background: var(--second-gradient);
-    border-radius: 20px;
-    color: var(--main-text-color);
     font-size: 20px;
     font-weight: bold;
+    color: var(--text-color);    
+    background: var(--second-gradient);
+    border-radius: 20px;
 }
 
 .item:not(:last-child){
