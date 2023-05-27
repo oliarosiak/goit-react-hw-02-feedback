@@ -1,11 +1,10 @@
 .section{
     display: inline-block;
-    width: 600px;
-    padding: 10px 0;
-    background: linear-gradient(to right, #fdc830, #f37335);
-    border: 2px solid var(--border-color);
-    border-radius: 15px;
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: var(--main-text-color);
+    width: 550px;
+    padding: 8px 0;
+    background: var(--second-gradient);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    font-size: 28px;
+    color: var(--main-text-color);    
 }

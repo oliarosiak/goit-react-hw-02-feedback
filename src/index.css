@@ -1,12 +1,15 @@
 @import-normalize; /* bring in normalize.css styles */
 
 :root {
+  /* --bcg-color: #8dc26f; */
+  /* --bcg-color: #eeb645; */
+  --main-gradient: linear-gradient(to right, #ff5f6d, #ffc371);;
+  --second-gradient: linear-gradient(to right, #f79d00, #64f38c);
   --logo-color: #1e6141;
-  --slogan-color: #3a753a;
-  --main-text-color: #188325;
-  --second-text-color: #2f6b33;
+  --main-text-color: #095c42;
+  /* --second-text-color: #216b3f; */
   --border-color: #124a4e;
-  --bcg-color: #eeb645;
+  --logo-shadow-color:#e6f79a;
 }
 
 body {

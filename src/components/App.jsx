@@ -39,8 +39,8 @@ class App extends Component{
     const percentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <div style={{marginTop: '80px'}}>
-        <Logo cafeName='Express Green Cafe' cafeSlogan='Healthy Body! Healthy Mind!' />
+      <div style={{marginTop: '50px'}}>
+        <Logo cafeName='= Express Green Cafe =' cafeSlogan='Healthy Body! Healthy Mind!' />
         <Section title='Please leave your feedback'>
           <FeedbackOptions options={stateKeys} onLeaveFeedback={onIncrement} />
         </Section>
